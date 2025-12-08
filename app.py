@@ -30,6 +30,7 @@ services = {
         "Netflix (넷플릭스 한국)": "https://help.netflix.com/ko/is-netflix-down",
         "Spotify (스포티파이)": "https://spotify.statuspage.io",
         "Zoom (줌)": "https://status.zoom.us",
+        "X & Twitter (엑스 & 트위터)": https://x.com/X,
         "Starlink (스타링크 비공식)": "https://starlinkstatus.space/",
     },
     "국내 주요 서비스": {
@@ -184,3 +185,4 @@ else:
 st.markdown("---")
 st.markdown("💡 각 버튼을 클릭하면 새 탭에서 상태 페이지가 열립니다.")
 st.markdown("💡 업데이트 요청 : 윤성주")
+
