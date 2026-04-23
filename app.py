@@ -11,7 +11,27 @@ st.set_page_config(
 st.title("Service Status Search ")
 st.markdown("⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐")
 st.markdown("---")
+# ✨ 상단 깃허브 아이콘 및 하단 푸터 숨기기 ✨
+hide_streamlit_style = """
+<style>
+/* 1. 우측 상단 깃허브 아이콘, Fork, Stop 버튼 등이 있는 헤더 전체 숨김 */
+header {visibility: hidden !important;}
+[data-testid="stHeader"] {display: none !important;}
+[data-testid="stToolbar"] {display: none !important;}
 
+/* 2. 하단 푸터 숨김 */
+footer {visibility: hidden !important;}
+
+/* 3. 하단 뱃지 숨김 시도 (클라우드 환경에 따라 안 먹힐 수 있음) */
+.viewerBadge_container__1QSob,
+.viewerBadge_link__1S137,
+.viewerBadge_text__1JaDK,
+[class^="viewerBadge_"] {
+    display: none !important;
+}
+</style>
+"""
+st.markdown(hide_streamlit_style, unsafe_allow_html=True)
 # 서비스 목록
 services = {
     "해외 주요 서비스": {
